@@ -1,0 +1,260 @@
+body {
+  width: 90%;
+  margin: auto;
+}
+
+.page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hebergementBorder {
+  border: 1px solid #ccc;
+  background-color: gray;
+  display: block;
+  padding: 20px;
+  background-color: rgb(228, 228, 228);
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.afficherplus {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hebergementCarte,
+.hebergementCarte2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.carte {
+  width: 250px;
+  height: 200px;
+  background-color: white;
+  margin: 10px;
+  padding: 4px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgb(146, 146, 146);
+}
+.carte h2 {
+  font-size: 1.1em;
+  margin: 0 0 0 5px;
+}
+.carte p {
+  margin: 0 0 0 5px;
+}
+.carte img {
+  width: 250px;
+  height: 125px;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.populaireBorder {
+  width: 400px;
+  background-color: rgb(228, 228, 228);
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.populaireBorder h1, .populaireBorder h2 {
+  margin-left: 10px;
+}
+.populaireBorder .carte {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 98%;
+  height: 125px;
+  flex-direction: row;
+  background-color: white;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgb(146, 146, 146);
+}
+.populaireBorder .carte h2 {
+  font-size: 1.2em;
+  margin: 0 0 0 10px;
+}
+.populaireBorder .carte p {
+  margin: 5px 0 0 10px;
+  flex-wrap: wrap;
+}
+.populaireBorder .carte img {
+  width: 150px;
+  height: 125px;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  .page {
+    display: block;
+  }
+  .hebergementBorder {
+    width: 90%;
+    align-items: center;
+  }
+  .hebergementBorder h1 {
+    text-align: center;
+    font-size: 150%;
+  }
+  .hebergements {
+    width: 85%;
+    margin: auto;
+  }
+  .hebergementCarte,
+  .hebergementCarte2 {
+    flex-direction: row;
+  }
+  .hebergementCarte,
+  .hebergementCarte2 {
+    width: 95%;
+    display: block;
+  }
+  .hebergementBorder .carte {
+    width: 100%;
+    height: 100%;
+  }
+  .hebergementBorder .carte img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-right: 10px;
+  }
+  .populaireBorder {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .populaireBorder h1 {
+    margin-left: 15%;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 900px) {
+  .page {
+    display: block;
+  }
+  .hebergementBorder {
+    width: 90%;
+  }
+  .hebergementBorder h1 {
+    margin-left: 15%;
+  }
+  .hebergements {
+    width: 85%;
+    margin: auto;
+  }
+  .hebergementCarte,
+  .hebergementCarte2 {
+    flex-direction: row;
+  }
+  .hebergementCarte,
+  .hebergementCarte2 {
+    width: 95%;
+    display: block;
+  }
+  .hebergementBorder .carte {
+    width: 100%;
+  }
+  .hebergementBorder .carte img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-right: 10px;
+  }
+  .populaireBorder {
+    margin-left: 19%;
+  }
+  .populaireBorder h1 {
+    margin-left: 15%;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+  .page {
+    display: block;
+  }
+  .hebergementBorder {
+    width: 90%;
+  }
+  .hebergementBorder h1 {
+    margin-left: 25%;
+  }
+  .hebergements {
+    width: 85%;
+    margin: auto;
+  }
+  .hebergementCarte,
+  .hebergementCarte2 {
+    flex-direction: row;
+  }
+  .hebergementCarte,
+  .hebergementCarte2,
+  .populaireBorder .carte {
+    width: 95%;
+  }
+  .carte {
+    width: 25%;
+  }
+  .carte img {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-right: 10px;
+  }
+  .populaireBorder {
+    margin-left: 25%;
+  }
+  .populaireBorder h1 {
+    margin-left: 15%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .page {
+    display: block;
+  }
+  .hebergementBorder {
+    width: 90%;
+  }
+  .hebergementBorder h1 {
+    margin-left: 30%;
+  }
+  .hebergements {
+    width: 90%;
+    margin: auto;
+  }
+  .hebergementCarte,
+  .hebergementCarte2 {
+    flex-direction: row;
+  }
+  .hebergementCarte,
+  .hebergementCarte2,
+  .populaireBorder .carte {
+    width: 95%;
+  }
+  .populaireBorder {
+    margin-left: 30%;
+  }
+  .populaireBorder h1 {
+    margin-left: 15%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
